@@ -3,6 +3,7 @@ from random import choice
 from Board import *
 from time import sleep
 import pygame
+import sys
 
 print("Welcome to Connect 4".center(125, "-"))
 print("You need a friend to play this game :)".center(125, " "))
@@ -32,13 +33,6 @@ turn = 1
 game_over = False
 winner = Player("", "")
 
-pygame.init()
-
-WINDOW_SIZE = 200
-
-size = (COLUMNS * WINDOW_SIZE, (ROWS + 2) * WINDOW_SIZE)
-
-screen = pygame.display.set_mode(size)
 
 while not game_over:
 
